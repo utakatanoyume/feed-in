@@ -1,0 +1,53 @@
+/* 基本スタイル */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    min-height: 400px; /* スクロールを分かりやすくするための高さ */
+    margin: 50px 0;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* フェードイン（縦）の初期状態 */
+.fadein {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-in-out;
+}
+
+/* フェードイン（縦）のアニメーション後 */
+.fadein.scrollin {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* スライドイン（横）の初期状態 */
+.slidein {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-in-out;
+}
+
+/* スライドイン（横）のアニメーション後 */
+.slidein.scrollin {
+    opacity: 1;
+    transform: translateX(0); /* 元の位置に戻す */
+}
+
+/* スクロールを促すための余白 */
+section:first-child {
+    min-height: 600px;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll-In Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>スクロールインアニメーション</h1>
+            <p>下にスクロールしてアニメーションを確認してください。</p>
+        </section>
+
+        <!-- 縦（フェードイン） -->
+        <section class="fadein">
+            <h2>フェードイン（縦）</h2>
+            <p>このセクションはスクロールでフェードインします。</p>
+        </section>
+
+        <!-- 横（左からスライドイン） -->
+        <section class="slidein">
+            <h2>スライドイン（横）</h2>
+            <p>このセクションは左からスライドインします。</p>
+        </section>
+
+        <!-- もう一つフェードイン -->
+        <section class="fadein">
+            <h2>もう一つのフェードイン</h2>
+            <p>さらに下にスクロールするとまたフェードインします。</p>
+        </section>
+
+        <!-- もう一つスライドイン -->
+        <section class="slidein">
+            <h2>もう一つのスライドイン</h2>
+            <p>さらに下にスクロールするとまた左からスライドインします。</p>
+        </section>
+    </div>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 自分のスクリプト -->
+    <script src="script.js"></script>
+</body>
+</html>
